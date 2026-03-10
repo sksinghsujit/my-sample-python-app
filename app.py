@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_db_connection():
     # Reading variables from your OpenShift environment
     return mysql.connector.connect(
-        host=os.environ['HOSTNAME'],
+        host=os.environ['MYSQL_HOSTNAME'],
         user=os.environ['MYSQL_USER'],
         password=os.environ['MYSQL_PASSWORD'],
         database=os.environ['MYSQL_DATABASE']

@@ -4,6 +4,8 @@
         <th>Name</th>
         <th>Title</th>
         <th>Designation</th>
+        <th>Year of Joining</th>
+        <th>Date of Birth</th>
     </tr>
     {% for emp in employees %}
     <tr>
@@ -11,9 +13,7 @@
         <td>{{ emp.title }}</td>
         <td>{{ emp.designation }}</td>
         <td>{{ emp.year_of_joining }}</td>
-        <td>{{ emp.date_of_birth }}</td>
-        <td>{{ emp.designation }}</td>
-        <td>{{ emp.designation }}</td>        
+        <td>{{ emp.date_of_birth }}</td>       
     </tr>
     {% endfor %}
 </table>

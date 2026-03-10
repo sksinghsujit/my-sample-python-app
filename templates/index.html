@@ -1,0 +1,15 @@
+<h1>Employee List</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Designation</th>
+    </tr>
+    {% for emp in employees %}
+    <tr>
+        <td>{{ emp.firstname }}</td>
+        <td>{{ emp.title }}</td>
+        <td>{{ emp.designation }}</td>
+    </tr>
+    {% endfor %}
+</table>
